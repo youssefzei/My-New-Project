@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <style>
+        #header{
+          width: 100%;
+          height: 100vh;
+            background-image: url(./images/img/سعودي/12.jpg);
+            background-position: right;
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-attachment:fixed
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/img/data2/LOG2.png" alt="">
+                <ul id="sidemenu">
+                    <li >
+                        <a style=" font-weight: bold; color: #262262; "   href="./index.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262; "  href="./about.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./experince.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./Gallary.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-image"></i>
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./Certificate .html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-award"></i>
+                            Certificate
+                        </a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                    <li>
+                        <a style=" font-weight: bold;color: #262262; "  href="./contact.html">
+                             <i style="color: #f8c34f; " class="fa-solid fa-phone"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                </h2>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <h1 style="color: #262262;">Hi, I'm Karim Ibrahim El-Sehrawy.<br> I work as a trainer in business management and all areas related to administration</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------about----------------------------- -->
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img/b.jpg" style="position: relative; bottom: 40px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Marital Status: Single.<br><br> Military Service: completed.<br><br> Date of Birth: January 27th, 1998.<br><br> Nationality: Egyptian.<br></p>
+                
+                    <div class="tab-titles">
+                        <p style="font-weight: bold;" class="tab-links active-link" onclick="opentab('skills')">
+                            <i style="color: #f8c34f;" class="fa-solid fa-gear"></i>
+                            Skills
+                        </p>
+                        <p style="font-weight: bold;" class="tab-links"onclick="opentab('experience')">
+                            <i style="color: #f8c34f;" class="fa-solid fa-star"></i>
+                            Objectives
+                        </p>
+                        <p style="font-weight: bold;" class="tab-links"onclick="opentab('educations')">
+                            <i style="color: #f8c34f;"  class="fa-solid fa-laptop-file"></i>
+                            Educations
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span  style="font-weight: bold;"> ● Computer Skills:- </span>
+                                <br> 
+                                ●  proficient user of Windows 11, Microsoft Office (Word, Excel, PowerPoint and outlook).
+                            </li>
+                            <li>
+                                <span  style="font-weight: bold;"> ● Language Skills:- </span>
+                                <br>
+                                ● Arabic: Mother tongue.
+                                <br>
+                                 ● Good command of English.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;"> ● Objectives :- </span>
+                                <br>
+                                Seeking a challenging and competitive job opportunity in the teaching field which I can combine all knowledge, experience and abilities.<br>
+                                I am a Bachelor of Commerce, Business Administration major graduate looking to work in a global and highly reputable company, which will benefit from my comprehensive knowledge through my study in Business Administration.
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span style="font-weight: bold;">● educations :- </span>
+                            </li>
+                            <li>
+                                
+                                ● Bachelor of Business Administration, Faculty of Commerce, Mansoura University, May 2020.
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">● Grade:</span>
+                                <br>
+                                ● Very Good.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!-- --------------------------------experince----------------------------------->
+
+<iv id="services">
+    <div class="container">
+        <h1 class="sub-title">My Experience</h1>
+        <div class="services-list">
+            <div>
+                <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                <h2>Umm Al-Qura Institutes for Training</h2>
+                <p>
+                    ●Supervising the day-to-day operations of the administrative department and staff members.<br>
+                    ●training, and evaluating employees and taking corrective action when necessary.<br>
+                    ●Ensuring necessary supplies and that all equipment is working and properly maintained.<br>
+                    ●Plan, implement and oversee the work of staff members to ensure efficiency and compliance with organizational requirements and company procedures. Collecting, organizing, and storing information using computers and filing systems.<br>
+                    ●tracking progress towards company goals.<br>
+                    ●Preparing reports for the branch<br>
+                    ●Distribution of tasks<br>
+                    </p>
+                <a href="./services.html">Learn more</a>
+            </div>
+            <div>
+                <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                <h2>Umm Al-Qura Institutes for Training</h2>
+                <p>●Delivering lectures and presentations on various topics related to commerce and vocational skills.<br>
+                   ●Developing curricula and educational materials to meet the needs of trainees.<br>
+                   ●Assessing trainees' performance and providing feedback to enhance their skills.<br>
+                   ●Organizing workshops and practical activities to reinforce applied understanding.<br>
+                   ●Collaborating with multidisciplinary teams to improve the quality of training programs.<br>
+                   ●Preparing periodic evaluation reports on trainees' progress and presenting them to management.<br>
+                   ●Guiding and mentoring trainees in their career paths and helping them set professional goals.<br>
+                   ●organizing individual and group training sessions.<br>
+                   ●Providing technical and informational support to trainees on various commercial topics.<br>
+                   </p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i style="color: #f8c34f;" class="fa-solid fa-mobile"></i>
+                <h2>Vivo smart phone, trainer, </h2>
+                <p>●Plan, implement and oversee the work of staff members to ensure efficiency and compliance with organizational requirements and company procedures.<br>
+                   ● Conduct ongoing safety audits, meet with individual staff members, attend company safety meetings and participate or direct other work activities designed to promote work safety and encourage continuing education among staff members<br>
+                   ●evaluating the knowledge and skills and the ability of the employees.<br>
+                   ●organizing appropriate training for all staff members.<br>
+                   ●responsible for train the new employees.<br>
+                   </p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+    <a href="./experince.html" class="btn">
+        <i class="fa-solid fa-angles-right"></i>
+        See More
+    </a>
+</div>
+
+<!-- ----------------------------------Portfolio--------------------------->
+
+
+<div class="Portfolio">
+    <div class="container">
+        <h1 class="sub-title">Gallery</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="./images/img/سعودي/10.jpg">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/img/سعودي/1.jpg" style="height: 100%;">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="./images/img/سعودي/14.jpg" style="height: 100%;">
+                <div class="layer">
+                    <h3>See More</h3>
+                    <a href="./Gallary.html"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+         <a href="./Gallary.html" class="btn">
+            <i class="fa-solid fa-angles-right"></i>
+            See More
+        </a>
+     </div> 
+</div>  
+
+<!-- --------------------------contact------------------------->
+
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-envelope"></i>
+                    karimibrahimelsehrawy@gmail.com
+                </p>
+                <p style="font-size: smaller;">
+                    <i style="color: #f8c34f" class="fa-brands fa-linkedin"></i>
+                    https://www.linkedin.com/in/karim-ibrahim-elsehrawy-a77b9217a
+                </p>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-square-phone"></i>🇪🇬
+                    (+20) 1094288263 
+                </p>
+                <p>
+                    <i style="color: #f8c34f" class="fa-solid fa-square-phone"></i>🇸🇦
+                    (+966) 540298210
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter-square"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                </div>
+                <a href="./images/img/data2/cv (1).pdf" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Youssef Zein Made wtih by Easy Tutorials</p>
+    </div>
+</div>
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbwwjQXFF-NmF37g1qQWi7mnkXVaqRgdfwcA6Y6jCOrMhAekoH0mX2KDmcPp4PXw5ZDQ/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully !"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },3000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body> 
+</html>

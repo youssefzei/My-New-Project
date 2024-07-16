@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website - Easy Tutorials</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="./images/img/data2/LOG2.png" alt="">
+                <ul id="sidemenu">
+                    <li >
+                        <a style=" font-weight: bold; color: #262262; "   href="./index.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-house"></i>
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262; "  href="./about.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-user"></i>
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./experince.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-briefcase"></i>
+                            Experience
+                        </a>
+                    </li>
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./Gallary.html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-image"></i>
+                            Gallery
+                        </a>
+                    </li>
+                    
+                    <li>
+                        <a style=" font-weight: bold; color: #262262;"  href="./Certificate .html">
+                            <i style="color: #f8c34f;" class="fa-solid fa-award"></i>
+                            Certificate
+                        </a>
+                    </li>
+                    <i class="fas fa-xmark" onclick="closemenu()"></i>
+                    <li>
+                        <a style=" font-weight: bold;color: #262262; "  href="./contact.html">
+                             <i style="color: #f8c34f; " class="fa-solid fa-phone"></i>
+                            Contact
+                        </a>
+                    </li>
+                </ul>
+                </h2>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+        </div>
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/img/b.jpg" style="position: relative; bottom: 40px;">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Marital Status: Single.<br><br> Military Service: completed.<br><br> Date of Birth: January 27th, 1998.<br><br> Nationality: Egyptian.<br></p>
+                
+                    <div class="tab-titles">
+                        <p style="font-weight: bold;" class="tab-links active-link" onclick="opentab('skills')">
+                            <i style="color: #f8c34f;" class="fa-solid fa-gear"></i>
+                            Skills
+                        </p>
+                        <p style="font-weight: bold;" class="tab-links"onclick="opentab('experience')">
+                            <i style="color: #f8c34f;" class="fa-solid fa-star"></i>
+                            Objectives
+                        </p>
+                        <p style="font-weight: bold;" class="tab-links"onclick="opentab('educations')">
+                            <i style="color: #f8c34f;"  class="fa-solid fa-laptop-file"></i>
+                            Educations
+                        </p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li>
+                                <span  style="font-weight: bold;"> ● Computer Skills:- </span>
+                                <br> 
+                                ●  proficient user of Windows 11, Microsoft Office (Word, Excel, PowerPoint and outlook).
+                            </li>
+                            <li>
+                                <span  style="font-weight: bold;"> ● Language Skills:- </span>
+                                <br>
+                                ● Arabic: Mother tongue.
+                                <br>
+                                 ● Good command of English.</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li>
+                                <span style="font-weight: bold;"> ● Objectives :- </span>
+                                <br>
+                                Seeking a challenging and competitive job opportunity in the teaching field which I can combine all knowledge, experience and abilities.<br>
+                                I am a Bachelor of Commerce, Business Administration major graduate looking to work in a global and highly reputable company, which will benefit from my comprehensive knowledge through my study in Business Administration.
+                                
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="educations">
+                        <ul>
+                            <li><span style="font-weight: bold;">● educations :- </span>
+                            </li>
+                            <li>
+                                
+                                ● Bachelor of Business Administration, Faculty of Commerce, Mansoura University, May 2020.
+                            </li>
+                            <li>
+                                <span style="font-weight: bold;">● Grade:</span>
+                                <br>
+                                ● Very Good.
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Youssef Zein Made wtih by Easy Tutorials</p>
+    </div> 
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+
+        }
+
+    </script>
+
+</body>
+</html>
